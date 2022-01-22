@@ -4,3 +4,4 @@ src/setupTests.ts
 src/serviceWorker.ts
 ./src/serviceWorker.ts
 src/reportWebVitals.ts
+tailwind.config.js

@@ -1,0 +1,26 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import '../../../index.css';
+
+import Section from './Section.tsx';
+
+<Meta title="Layout/Section" component={Section} />
+
+export const Template = (args) => (
+	<div>
+		<Section />
+		<Section size={args.size} color={args.color}>
+			{args.text}
+		</Section>
+		<Section />
+	</div>
+);
+
+<Story
+	name="Primary"
+	args={{
+		text: 'I am a small section',
+		size: null,
+		color: null,
+	}}>
+	{Template.bind({})}
+</Story>
