@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@import '../../node_modules/bulma/sass/utilities/functions.sass';
+
+$amethyst: #8f65b8;
+$light-sea-green: #1fc1b1;
+$cyber-grape: #443c68;
+$prussian-blue: #092234;
+
+$primary: $amethyst;
+
+$secondary: $light-sea-green;
+$secondary-invert: findColorInvert($secondary);
+
+$tertiary: $cyber-grape;
+$tertiary-invert: findColorInvert($tertiary);
+
+$quaternary: $prussian-blue;
+$quaternary-invert: findColorInvert($quaternary);
+
+$custom-colors: (
+	'secondary': (
+		$secondary,
+		$secondary-invert,
+	),
+	'tertiary': (
+		$tertiary,
+		$tertiary-invert,
+	),
+	'quaternary': (
+		$quaternary,
+		$quaternary-invert,
+	),
+);
