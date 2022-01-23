@@ -7,6 +7,6 @@
 		"esbenp.prettier-vscode",
 		"csstools.postcss",
 		"bradlc.vscode-tailwindcss",
-		"silvenon.mdx"
+		"pkief.material-icon-theme"
 	]
 }

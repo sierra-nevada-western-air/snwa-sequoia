@@ -1,4 +1,4 @@
 export enum SectionSize {
-	Medium = 1,
-	Large = 2,
+	Medium = 0,
+	Large = 1,
 }

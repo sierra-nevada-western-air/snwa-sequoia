@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
-import { SectionColor } from './SectionColor';
 import { SectionSize } from './SectionSize';
 
-const Section: React.FC<SectionProps> = ({ children, size, color }) => {
+const Section: React.FC<SectionProps> = ({ children, size }) => {
 	const determineSize = (): string => {
 		switch (size) {
 			case SectionSize.Medium:
@@ -10,26 +9,16 @@ const Section: React.FC<SectionProps> = ({ children, size, color }) => {
 			case SectionSize.Large:
 				return 'lg:py-72 lg:px-24';
 			default:
-				return '';
+				return 'lg:py-12 lg:px-12';
 		}
 	};
 
-	const determineBackgroundColor = (): string => {
-		switch (color) {
-			case SectionColor.Primary:
-				return 'bg-teal-500';
-			default:
-				return '';
-		}
-	};
-
-	return <section className={`py-12 px-6 lg:py-12 lg:px-12 ${determineSize()} ${determineBackgroundColor()}`}>{children}</section>;
+	return <section className={`py-12 px-6 ${determineSize()}`}>{children}</section>;
 };
 
-interface SectionProps {
+export interface SectionProps {
 	children: ReactNode;
 	size?: SectionSize;
-	color?: SectionColor;
 }
 
 export default Section;
