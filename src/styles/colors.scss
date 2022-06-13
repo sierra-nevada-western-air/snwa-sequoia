@@ -2,14 +2,14 @@
 
 @import '../../node_modules/bulma/sass/utilities/functions.sass';
 
-$amethyst: #8f65b8;
-$light-sea-green: #1fc1b1;
-$cyber-grape: #443c68;
+$royal-purple: #8557B2;
+$turquoise: #22D3C1;
+$cyber-grape: #443C68;
 $prussian-blue: #092234;
 
-$primary: $amethyst;
+$primary: $royal-purple;
 
-$secondary: $light-sea-green;
+$secondary: $turquoise;
 $secondary-invert: findColorInvert($secondary);
 
 $tertiary: $cyber-grape;
